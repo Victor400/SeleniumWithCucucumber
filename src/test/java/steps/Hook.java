@@ -12,7 +12,7 @@ import Base.BaseUtil;
 import io.cucumber.java.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.firefoxDriver;
+
 
 
 /**
@@ -36,16 +36,16 @@ public class Hook extends BaseUtil{
 
         System.out.println("Opening the browser : Firefox");
 
-        System.setProperty("webdriver.firefox.marionette", "C:\\driver\\Web\\geckodriver.exe");
-        base.Driver = new FirefoxDriver();
+      /*    System.setProperty("webdriver.firefox.marionette", "C:\\driver\\Web\\geckodriver.exe");
+        base.Driver = new FirefoxDriver();*/
 
 
         //Chrome driver
 //        System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
 //        base.Driver = new ChromeDriver();
 
-     /*   System.setProperty("webdriver.chrome.driver", "C:/driver/Web/chromedriver.exe");
-        base.Driver = new ChromeDriver();/
+      System.setProperty("webdriver.chrome.driver", "C:/driver/Web/chromedriver.exe");
+        base.Driver = new ChromeDriver();
     }
 
 
